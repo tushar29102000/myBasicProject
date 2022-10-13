@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+</head>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        
+    }
+    body{
+        background-color: bisque;
+    }
+    #box{display: flex;
+        height: 220px;
+        width: 220px;
+        background-color: tomato;
+        justify-content: center;
+        align-items: center;
+        transition-property: background-color;
+        transition-duration: 3s;
+        transition: all 3s ease-in-out.3s;
+        
+
+
+    }
+    #box:hover{
+        background-color: blueviolet;
+        height: 400px;
+        width: 400px;
+        border-radius: 45px;
+        transform: rotate(45deg);
+        transform:translateX(45px)
+    }
+
+</style>
+<body>
+    <h3>
+        This is css Transition Tutorial
+    </h3>
+    <div class="container">
+        <div id="box">
+            this is my box
+        </div>
+    </div>
+    
+</body>
+</html>

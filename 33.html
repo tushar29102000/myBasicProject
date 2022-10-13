@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>before and after pseudo selector</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+            background-color: url('https://media.istockphoto.com/photos/woman-working-in-a-factory-picture-id1135514877') no-repeat center
+            center/cover
+        }
+        header::before{
+            content: none;
+            background-color: url('https://media.istockphoto.com/photos/woman-working-in-a-factory-picture-id1135514877') no-repeat center
+            center/cover
+        
+        }
+        section{
+            margin: 33px 33px;
+            padding: 55px;
+            display: flex;
+            flex-direction: column;
+            align-items:center ;
+            justify-content: center;
+        }
+        h1{
+            font-size: 4rem;
+        }
+        p{
+            text-align: center;
+        }
+        section::before{
+            content: "this is a content";
+        }
+        .navigation
+        { font-size: large;
+            display: flex;
+        }
+        li{
+            list-style: none; 
+            padding: 43px;
+
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class = "navigation">
+                <li class="item">home</li>
+                <li class="item">about</li>
+                <li class="item">services</li>
+                <li class="item">contact us </li>
+            </ul>
+            <hr>
+        </nav>
+        <section>
+            <h3>
+                welcome to coding world
+            </h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit accusamus reiciendis eum sed. Quidem quam, ducimus provident in, dolore ullam neque laboriosam ut cupiditate alias veritatis, cumque culpa dolorem cum.
+            </p>
+        </section>
+    </header>
+    
+</body>
+</html>

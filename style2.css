@@ -1,0 +1,19 @@
+/* Css Resent */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* Css variable */
+:root{
+    --navbar-hieght:59px;
+}
+/* Navigation bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    
+}
+.box img{
+    display: flex;
+    size: 0px;}
+    
